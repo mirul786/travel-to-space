@@ -1,0 +1,430 @@
+body {
+    align-items: center;
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+/* <-- Image Section Styling --> */
+
+.image-main-desktop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;  
+}
+
+.image-main-tablet {
+    display: none;
+    position: fixed;
+    width: 100%;
+}
+
+.image-main-mobile {
+    display: none;
+    position: fixed;
+    width: 100%;
+}
+
+.star-image-main {
+    position: relative;
+    width: 45px;
+    margin: 4rem 0 0 1rem;
+}
+
+.crew-image {
+    position: relative;
+    width: auto;
+}
+
+/* <-- Horizontal line from star image --> */
+.horizontal {
+    width: 25%;
+    color: #eee7e7;
+    height: 0.5rem;
+    margin-left: 5rem;
+    margin-top: -2.5rem;
+}
+
+/* <-- UPPER-NAVBAR-DESTINATION --> */
+
+#navbar-crew {
+    position: relative;
+	float: right;
+    padding: 0 5rem;
+    margin-top: -3.5rem;
+    background: linear-gradient(to right, #2b2b30 35%, #191825 55%, #2b2b30 80%);
+}
+
+.navbar-number {
+    font-size: small;
+    color: #fff;
+    margin-right: 0.5rem;
+    font-weight: 600;
+}
+
+.navbar-content {
+    font-size: small;
+    letter-spacing:0.1em;
+    margin-right: 2.7rem;
+    color: #eee7e7;
+}
+
+.navbar-technical-content {
+    font-size: small;
+    letter-spacing:0.1em;
+    color: #eee7e7;
+}
+
+.crew-designation {
+    position: relative;
+    font-size: 25px;
+    color: #9b9a9a;
+    margin: 5rem  auto 1rem;
+}
+
+.crew-name {
+    position: relative;
+    font-size: 40px;
+    color: #eee7e7;
+    margin: 1rem auto 3rem;
+}
+
+/* <-- DESTINATION SECTION -->*/
+
+#crew-information {
+    display: block;
+    margin: 5rem auto auto 7rem;
+}
+
+.crew-heading {
+    position: relative;
+    color: #fff;
+    font-size: larger;
+    letter-spacing: 0.2rem;
+    z-index: 1;
+}
+
+.crew-number {
+    color: grey;
+    opacity: 50%;
+    margin-right: 2rem;
+}
+
+.description {
+    position: relative;
+    color: #c9c5c5;
+    font-size: medium;
+    margin-top: 1rem;
+    width: 60%;
+    z-index: 1;
+}
+
+.distance-text {
+    position: relative;
+    color: #e6e3e3;
+    font-size: x-small;
+    margin-right: 6rem;
+    z-index: 1;
+}
+
+.distance-number {
+    position: relative;
+    color: #e6e3e3;
+    font-size: x-large;
+    margin-right: 2.8rem;
+    z-index: 1;
+}
+
+/* <-- Destination-Navbar --> */
+
+.navbar-content {
+    color: #fff;
+    margin-right: 1rem;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.navbar .navbar-nav .nav-link {
+    padding: 2em 0;
+    
+}
+.navbar .navbar-nav .nav-item {
+    position: relative;
+    margin: 0 2em;
+}
+
+.navbar .navbar-nav .nav-item::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: " ";
+    background-color: #fff;
+    width: 0%;
+    height: 4px;
+}
+
+.navbar .navbar-nav .nav-item:hover::after {
+    width: 100%;
+}
+
+/* <-- Media Query --> */
+
+@media (max-width: 1150px) {
+
+    #navbar-crew {
+        padding: 0;
+    }
+
+    .navbar-content {
+        margin-right: 0;  
+    }
+
+    #crew-information {
+        position: relative;
+        margin-left: 0;
+    }
+
+    .description {
+        width: 80%;  
+    }
+
+}
+
+@media (max-width: 850px) and (min-width: 765px) {
+
+
+/* <-- Image Section --> */
+
+    .image-main-desktop {
+        display: none;
+    }
+    
+    .image-main-tablet {
+        display: inline;
+        height: 1300px;
+    }
+    
+    .star-image-main {
+        margin-top: 1rem;
+        margin-left: 0.5rem;
+        width: 6rem;
+    }
+    
+    .horizontal {
+        display: none;
+        
+    }
+    
+ /* <-- Navbar --> */
+    
+    #navbar-crew {
+        margin-top: -6rem;
+        padding: 0;
+        float: right;
+        color: #fff;
+        opacity: 100%;
+        background: #2b2b30;
+    }
+    
+    .navbar-number {
+        display: none;
+    }
+    
+    .navbar-content {
+        font-size: large;
+        letter-spacing:0.1em;
+        margin-right: 1rem;
+        color: #fff;
+    }
+    
+    .navbar-technical-content {
+        font-size: large;
+        letter-spacing:0.1em;
+        color: #eee7e7;
+    }
+
+ /* <-- Destination Section --> */   
+ .navbar {
+    padding: 0;
+}
+
+#navbar-crew .navbar-nav .nav-link {
+    padding: 2rem 0;
+    
+}
+.navbar .navbar-nav .nav-item {
+    position: relative;
+    margin: 0 0.6rem;
+}
+}
+
+@media (max-width: 765px) and (min-width: 575px) {
+    .image-main-desktop {
+        display: none;
+    }
+    
+    .image-main-tablet {
+        display: inline;
+        height: 1300px;
+    }
+    
+    .star-image-main {
+        margin-top: 1rem;
+        margin-left: 0.5rem;
+        width: 6rem;
+    }
+
+    .horizontal {
+        display: none;
+    }
+
+    /* <-- Navbar --> */
+    
+    #navbar-crew {
+        margin-top: -6rem;
+        padding: 1rem 2rem;
+        float: right;
+        color: #fff;
+        opacity: 100%;
+        background: #2b2b30;
+    }
+    
+    .navbar-number {
+        display: none;
+    }
+    
+    .navbar-content {
+        font-size: small;
+        letter-spacing:0.1em;
+        color: #fff;
+    }
+    
+    .navbar-technical-content {
+        font-size: small;
+        letter-spacing:0.1em;
+        color: #eee7e7;
+    }
+
+    .navbar {
+        padding: 0;
+    }
+    
+    #navbar-crew .navbar-nav .nav-link {
+        padding: 1rem;
+        
+    }
+    .navbar .navbar-nav .nav-item {
+        position: relative;
+        margin: 0;
+    }
+
+    /* <-- CREW SECTION --> */
+
+    #crew-information {
+        display: block;
+        position: relative;
+        margin-left: 10rem;
+    }
+
+    .crew-heading {
+
+        font-size: 30px;
+        
+    }  
+    
+    .crew-number {
+        font-size: 30px;
+        margin-left: -5rem;
+    }
+
+    .crew-image {
+        margin: auto;
+    }
+    #crew-information {
+        position: relative;
+        width: 80%;
+        margin-left: 5rem;
+    }
+
+}
+
+@media (max-width: 575px) {
+
+    .image-main-desktop {
+        display: none;
+    }
+
+    .image-main-tablet {
+        display: none;
+    }
+
+    .image-main-mobile {
+        display: inline;
+        height: 1400px;
+    }
+
+    .star-image-main {
+        margin-top: 1rem;
+        margin-left: 0.5rem;
+        width: 6rem;
+    }
+
+    .horizontal {
+        display: none;
+    }
+
+    #navbar-crew {
+        background: none;
+        margin-right: 1rem;
+        margin-top: -6rem;
+    }
+    
+    .collapse {
+        
+        margin: auto;
+        text-align: left;
+    }
+    
+    .navbar-toggler-icon {
+        float: none;
+        background-size: 70px;
+        width: 45px;
+        height: 70px;
+
+    }
+
+    .navbar {
+        padding: 0;
+    }
+    
+    #navbar-crew .navbar-nav .nav-link {
+        padding: 2rem 0;
+        
+    }
+    .navbar .navbar-nav .nav-item {
+        position: relative;
+        margin: 0;
+    }
+
+    /* <-- CREW SECTION --> */   
+
+    #crew-information {
+        display: inline-block;
+        position: relative;
+        margin-left: 4rem;
+    }
+
+    .crew-number {
+        font-size: 30px;
+    }
+    
+    .crew-heading {
+        font-size: 30px;
+    }
+
+    .crew-image {
+        width: 100%;
+    }
+}

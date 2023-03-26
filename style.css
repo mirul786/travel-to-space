@@ -1,0 +1,348 @@
+body {
+    align-items: center;
+    font-family: 'Hind Madurai', sans-serif;
+}
+#home {
+    width: 100%;
+    height: 100%;
+}
+/* All the background images, .png images and other images are contained in this section */
+
+.image-main-desktop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+   
+}
+
+.image-main-tablet {
+    display: none;
+    position: absolute;
+    width: 100%;
+
+}
+
+.image-main-mobile {
+    display: none;
+    position: absolute;
+    width: 100%;
+
+}
+.star-image-main {
+    position: relative;
+    width: 45px;
+    margin: 4rem 0 0 1rem;
+}
+
+.background-destination-desktop {
+    background-size: cover;
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.horizontal {
+    width: 25%;
+    color: #eee7e7;
+    height: 0.5rem;
+    margin-left: 5rem;
+    margin-top: -2.5rem;
+}
+
+/* <--NAVBAR--> */
+
+#navbar-home {
+    position: relative;
+	float: right;
+    padding: 0 5rem;
+    margin-top: -3rem;
+    background: linear-gradient(to right, #191825 25%, #19282F 50%,  #144272 85%);
+    opacity: 80%;
+}
+
+.navbar-number {
+    font-size: small;
+    margin-right: 0.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.navbar-content {
+    font-size: small;
+    letter-spacing:0.1em;
+    color: #eee7e7;
+    
+}
+
+.navbar-technical-content {
+    font-size: small;
+    letter-spacing:0.1em;
+    color: #eee7e7;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.navbar .navbar-nav .nav-link {
+    padding: 2em 0;
+    
+}
+.navbar .navbar-nav .nav-item {
+    position: relative;
+    margin: 0 2em;
+}
+
+.navbar .navbar-nav .nav-item::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: " ";
+    background-color: #fff;
+    width: 0%;
+    height: 4px;
+}
+
+.navbar .navbar-nav .nav-item:hover::after {
+    width: 105%;
+}
+/* <-- Main Content --> */
+
+#travel-to-space {
+    position: relative;
+    margin: 8rem auto auto 7rem;
+    color: #fff;
+    width: 350px;
+    z-index: 1;
+}
+
+
+.travel-description {
+    font-size: x-large;
+    line-height: 2;
+    word-spacing: 0.2rem;
+}
+
+.space {
+    margin-left: 0.5rem;
+    font-size: 150px;
+    word-spacing: 0.2rem
+}
+
+.customer-message {
+    color: #fff;
+    text-align: justify;
+    line-height: 1.5;
+    font-size: large;
+    opacity: 60%;
+}
+.btn {
+    font-size: 40px;
+    position: relative;
+    padding: 5rem;
+    border-radius: 100%;
+    margin: -23rem 5rem auto;
+    float: right;
+    
+}
+
+/* <-- Media Query --> */
+
+@media (max-width: 1150px) {
+
+    #navbar-home {
+        padding: 0;
+    }
+
+    #travel-to-space {
+        margin: 10rem 0 0 1rem;  
+    }
+
+    .btn {
+        margin: -23rem 1rem auto;
+    }
+}
+
+@media (max-width: 850px) {
+
+    .image-main-desktop {
+        display: none;
+    }
+    
+    .image-main-tablet {
+        display: inline;
+        height: 1300px;
+    }
+    
+    .star-image-main {
+        margin-top: 1rem;
+        margin-left: 0.5rem;
+        width: 6rem;
+    }
+    
+    .horizontal {
+        display: none;
+    }
+    
+ /* <-- Navbar --> */
+    
+    #navbar-home {
+        margin-top: -6rem;
+        padding: 0;
+        color: #fff;
+        opacity: 100%;
+        background: #191825;
+    }
+    
+    .navbar-number {
+        display: none;
+    }
+    
+    .navbar-content {
+        font-size: small;
+        letter-spacing:0.1em;
+        margin-right: 0;
+        color: #fff;
+    }
+    
+    .navbar-technical-content {
+        font-size: small;
+        letter-spacing:0.1em;
+        color: #eee7e7;
+    }    
+    
+    
+   /* <-- Main Content --> */ 
+    #travel-to-space {
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        margin: 7rem auto 1rem;
+        width: auto;
+        color: #fff;
+    }
+    
+    .travel-description {
+        font-size: 30px;    
+    }
+    
+    .space {
+        font-size: 190px;
+        margin-bottom: 5rem;
+    }
+    
+    .customer-message {
+        font-size: 20px;
+        width: 69%;
+        text-align: center;
+        margin: auto auto 5rem;
+        color: #fff;
+        opacity: 90%;
+    }
+
+    .btn-explore {
+        text-align: center;
+        margin: 10rem auto 0;
+        
+    }
+    
+    .btn {
+        float: none;
+        position: relative;
+        font-size: 40px;
+        padding: 17%;
+        text-align: center;
+        border-radius: 100%;
+        margin: auto;
+        
+    }
+}
+
+
+@media (max-width: 575px) {
+
+    /* IMAGE SECTION */
+
+    .image-main-desktop {
+        display: none;
+    }
+
+    .image-main-tablet {
+        display: none;
+    }
+
+    .image-main-mobile {
+        display: inline;
+        height: 1400px;
+    }
+
+    .horizontal {
+        display: none;
+    }
+    
+    /* NAVBAR-HOME SECTION */
+    #navbar-home {
+        background: none;
+        padding: 0;
+        margin-right: 1rem;
+    }
+    
+    .collapse {
+        
+        margin: auto;
+        text-align: left;
+    }
+    
+    .navbar-toggler-icon {
+        float: none;
+        background-size: 70px;
+        width: 45px;
+        height: 70px;
+        
+    }
+
+    .navbar-content {
+        font-size:  large;
+    }
+    
+    .navbar-technical-content {
+        font-size: large;
+    }
+
+    .navbar {
+        padding: 0;
+    }
+    
+    .navbar .navbar-nav .nav-link {
+        padding: 1rem 0;
+        
+    }
+
+    #travel-to-space {
+        margin-top: 5rem;  
+    }
+
+    .travel-description {
+        display: inline-block;
+        font-size: x-large;
+        margin-bottom: 5rem;
+    }
+
+    .space {
+        font-size: 150px;
+    }
+
+    .customer-message {
+        width: 90%;
+    }
+
+    .btn-explore {
+        text-align: center;
+        margin: 7rem auto 0;
+        
+    }
+
+}
+

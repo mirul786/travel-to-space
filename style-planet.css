@@ -1,0 +1,435 @@
+body {
+    align-items: center;
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+/* <-- Image Section Styling --> */
+
+.image-main-desktop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;  
+}
+
+.image-main-tablet {
+    display: none;
+    position: fixed;
+    width: 100%;
+}
+
+.image-main-mobile {
+    display: none;
+    position: fixed;
+    width: 100%;
+}
+
+.star-image-main {
+    position: relative;
+    width: 45px;
+    margin: 4rem 0 0 1rem;
+}
+
+.image-planet {
+    position: relative;
+    width: 20rem;
+    margin: 3rem  auto auto 5rem;
+}
+
+/* <-- Horizontal line from star image --> */
+.horizontal {
+    width: 25%;
+    color: #eee7e7;
+    height: 0.5rem;
+    margin-left: 5rem;
+    margin-top: -2.5rem;
+}
+
+/* <-- UPPER-NAVBAR-DESTINATION --> */
+
+#navbar-destination {
+    position: relative;
+	float: right;
+    padding: 0 5rem;
+    margin-top: -3.5rem;
+    background: linear-gradient(to right, #1d2b36 25%, #191825 100%);
+}
+
+.navbar-number {
+    font-size: small;
+    color: #fff;
+    margin-right: 0.5rem;
+    font-weight: 600;
+}
+
+.navbar-content {
+    font-size: small;
+    letter-spacing:0.1em;
+    margin-right: 2.7rem;
+    color: #eee7e7;
+}
+
+.navbar-technical-content {
+    font-size: small;
+    letter-spacing:0.1em;
+    color: #eee7e7;
+}
+
+/* <-- DESTINATION SECTION -->*/
+
+#destination-pickup {
+    display: block;
+    margin: 5rem auto auto 7rem;
+}
+
+.destination-heading {
+    position: relative;
+    color: #fff;
+    font-size: larger;
+    letter-spacing: 0.2rem;
+    z-index: 1;
+}
+
+.destination-number {
+    color: grey;
+    opacity: 50%;
+    margin-right: 2rem;
+}
+
+.destination-planet {
+    position: relative;
+    display: block;
+    margin-top: 3.5rem;
+    color: #fff;
+    font-size: 90px;
+    z-index: 1;
+}
+
+.description {
+    position: relative;
+    color: #c9c5c5;
+    font-size: medium;
+    margin-top: 1rem;
+    width: 60%;
+    z-index: 1;
+}
+
+.horizontal-2 {
+    width: 55%;
+    color: #eee7e7;
+    height: 0.5rem;
+    margin-top: 2rem;
+}
+
+.distance-text {
+    position: relative;
+    color: #e6e3e3;
+    font-size: x-small;
+    margin-right: 6rem;
+    z-index: 1;
+}
+
+.distance-number {
+    position: relative;
+    color: #e6e3e3;
+    font-size: x-large;
+    margin-right: 2.8rem;
+    z-index: 1;
+}
+
+/* <-- Destination-Navbar --> */
+
+#navbar-destination-planet {
+    display: block;
+    position: relative;
+    float: left;
+    
+}
+
+.navbar-content {
+    color: #fff;
+    margin-right: 1rem;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.navbar .navbar-nav .nav-link {
+    padding: 2em 0;
+    
+}
+.navbar .navbar-nav .nav-item {
+    position: relative;
+    margin: 0 2em;
+}
+
+.navbar .navbar-nav .nav-item::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: " ";
+    background-color: #fff;
+    width: 0%;
+    height: 4px;
+}
+
+.navbar .navbar-nav .nav-item:hover::after {
+    width: 100%;
+}
+
+/* <-- Media Query --> */
+
+@media (max-width: 1150px) {
+
+    #navbar-destination {
+        padding: 0;
+    }
+
+    .navbar-content {
+        margin-right: 0;  
+    }
+
+    #destination-pickup {
+        position: relative;
+        margin-left: 0;
+    }
+
+    .image-planet {
+        margin-left: 0;
+    }
+
+    .description {
+    
+        width: 80%;
+        
+    }
+
+}
+
+@media (max-width: 850px) and (min-width: 765px) {
+
+
+/* <-- Image Section --> */
+
+    .image-main-desktop {
+        display: none;
+    }
+    
+    .image-main-tablet {
+        display: inline;
+        height: 1300px;
+    }
+    
+    .star-image-main {
+        margin-top: 1rem;
+        margin-left: 0.5rem;
+        width: 6rem;
+    }
+
+    .image-planet {
+        width: 22rem;
+        margin-left: 0;
+    }
+    
+    .horizontal {
+        display: none;
+        
+    }
+    
+ /* <-- Navbar --> */
+    
+    #navbar-destination {
+        margin-top: -6rem;
+        padding: 0;
+        color: #fff;
+        opacity: 100%;
+        background: #1d2b36;
+    }
+    
+    .navbar-number {
+        display: none;
+    }
+    
+    .navbar-content {
+        font-size: large;
+        letter-spacing:0.1em;
+        margin-right: 1rem;
+        color: #fff;
+    }
+    
+    .navbar-technical-content {
+        font-size: large;
+        letter-spacing:0.1em;
+        color: #eee7e7;
+    }
+
+ /* <-- Destination Section --> */   
+ .navbar {
+    padding: 0;
+}
+
+#navbar-destination-planet .navbar-nav .nav-link {
+    padding: 2rem 0;
+    
+}
+.navbar .navbar-nav .nav-item {
+    position: relative;
+    margin: 0 0.6rem;
+}
+}
+
+@media (max-width: 765px) and (min-width: 575px) {
+    .image-main-desktop {
+        display: none;
+    }
+    
+    .image-main-tablet {
+        display: inline;
+        height: 1300px;
+    }
+    
+    .star-image-main {
+        margin-top: 1rem;
+        margin-left: 0.5rem;
+        width: 6rem;
+    }
+
+    .image-planet {
+        margin-bottom: 3rem;
+    }
+
+    /* <-- Navbar --> */
+    
+    #navbar-destination {
+        margin-top: -6rem;
+        padding: 0 2rem;
+        color: #fff;
+        opacity: 100%;
+        background: #1d2b36;
+    }
+    
+    .navbar-number {
+        display: none;
+    }
+    
+    .navbar-content {
+        font-size: small;
+        letter-spacing:0.1em;
+        margin-right: 1rem;
+        color: #fff;
+    }
+    
+    .navbar-technical-content {
+        font-size: small;
+        letter-spacing:0.1em;
+        color: #eee7e7;
+    }
+
+    .navbar {
+        padding: 0;
+    }
+    
+    #navbar-destination-planet .navbar-nav .nav-link {
+        padding: 1rem;
+        
+    }
+    .navbar .navbar-nav .nav-item {
+        position: relative;
+        margin: 0;
+    }
+
+    /* <-- Destination PickUp --> */
+
+    #destination-pickup {
+        display: block;
+        position: relative;
+        margin-left: 10rem;
+    }
+
+}
+
+@media (max-width: 575px) {
+
+    .image-main-desktop {
+        display: none;
+    }
+
+    .image-main-tablet {
+        display: none;
+    }
+
+    .image-main-mobile {
+        display: inline;
+        height: 1400px;
+    }
+
+    .image-planet {
+        width: 20rem;
+    }
+
+    .star-image-main {
+        margin-top: 1rem;
+        margin-left: 0.5rem;
+        width: 6rem;
+    }
+
+    .horizontal {
+        display: none;
+    }
+    
+    .horizontal-2 {
+        margin-left: 5rem;
+    }
+
+    #navbar-destination {
+        background: none;
+        margin-right: 1rem;
+        margin-top: -6rem;
+    }
+    
+    .collapse {
+        
+        margin: auto;
+        text-align: left;
+    }
+    
+    .navbar-toggler-icon {
+        float: none;
+        background-size: 70px;
+        width: 45px;
+        height: 70px;
+
+    }
+
+    .navbar {
+        padding: 0;
+    }
+    
+    #navbar-destination-planet .navbar-nav .nav-link {
+        padding: 2rem 0;
+        
+    }
+    .navbar .navbar-nav .nav-item {
+        position: relative;
+        margin: 0;
+    }
+
+    /* <-- Destination Section --> */   
+
+    #destination-pickup {
+        display: inline-block;
+        position: relative;
+        margin-left: 4rem;
+    }
+
+    .destination-planet {
+        display: inline-block;
+        margin-left: 5rem;
+    }
+
+    .description {
+        margin-left: 5rem;
+    }
+}
